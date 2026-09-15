@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="150" viewBox="0 0 1000 150">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="band">
+      <rect x="0" y="0" width="1000" height="150">
+        <animate attributeName="y" dur="4s" repeatCount="indefinite"
+          values="0;0;40;40;98;98;0;0" keyTimes="0;0.62;0.64;0.70;0.72;0.78;0.80;1"/>
+        <animate attributeName="height" dur="4s" repeatCount="indefinite"
+          values="150;150;22;22;14;14;150;150" keyTimes="0;0.62;0.64;0.70;0.72;0.78;0.80;1"/>
+      </rect>
+    </clipPath>
+    <style>
+      .g{font-family:'Courier New',Courier,monospace;font-weight:700;font-size:54px;letter-spacing:6px}
+    </style>
+  </defs>
+
+  <rect width="1000" height="150" fill="#05010A"/>
+
+  <g clip-path="url(#band)">
+    <text class="g" x="500" y="95" text-anchor="middle" fill="#00E5FF" opacity="0.85">MOHAMMED BILAL NADEEM
+      <animateTransform attributeName="transform" type="translate" dur="4s" repeatCount="indefinite"
+        values="0 0;0 0;-7 -2;5 1;0 0;0 0" keyTimes="0;0.6;0.65;0.72;0.78;1"/>
+    </text>
+    <text class="g" x="500" y="95" text-anchor="middle" fill="#FF2E97" opacity="0.85">MOHAMMED BILAL NADEEM
+      <animateTransform attributeName="transform" type="translate" dur="4s" repeatCount="indefinite"
+        values="0 0;0 0;7 2;-5 -1;0 0;0 0" keyTimes="0;0.6;0.65;0.72;0.78;1"/>
+    </text>
+  </g>
+
+  <text class="g" x="500" y="95" text-anchor="middle" fill="#39FF14" filter="url(#glow)">MOHAMMED BILAL NADEEM
+    <animate attributeName="opacity" dur="4s" repeatCount="indefinite"
+      values="1;1;0.5;1;0.7;1;1" keyTimes="0;0.6;0.63;0.66;0.7;0.74;1"/>
+  </text>
+
+  <rect x="0" y="0" width="1000" height="3" fill="#39FF14" opacity="0.22">
+    <animate attributeName="y" dur="6s" repeatCount="indefinite" values="-5;155"/>
+  </rect>
+</svg>

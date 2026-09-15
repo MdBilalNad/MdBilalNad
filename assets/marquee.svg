@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="90" viewBox="0 0 1200 90">
+  <defs>
+    <linearGradient id="tg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#39FF14"/>
+      <stop offset="35%"  stop-color="#00E5FF"/>
+      <stop offset="70%"  stop-color="#B026FF"/>
+      <stop offset="100%" stop-color="#FF2E97"/>
+    </linearGradient>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .t{font-family:'Courier New',Courier,monospace;font-weight:700;font-size:26px;letter-spacing:2px}
+    </style>
+  </defs>
+
+  <rect width="1200" height="90" fill="#05010A"/>
+  <line x1="0" y1="45" x2="1200" y2="45" stroke="#39FF14" stroke-opacity="0.10"/>
+
+  <g filter="url(#soft)">
+    <g>
+      <animateTransform attributeName="transform" type="translate"
+        from="0 0" to="-2675 0" dur="32s" repeatCount="indefinite"/>
+
+      <text class="t" x="40" y="56" fill="url(#tg)">PYTHON · PANDAS · NUMPY · SCIKIT-LEARN · PYTORCH · TENSORFLOW · FLASK · FASTAPI · DOCKER · KUBERNETES · MYSQL · POWER BI · STREAMLIT · GIT · TAILWIND · </text>
+
+      <text class="t" x="2715" y="56" fill="url(#tg)">PYTHON · PANDAS · NUMPY · SCIKIT-LEARN · PYTORCH · TENSORFLOW · FLASK · FASTAPI · DOCKER · KUBERNETES · MYSQL · POWER BI · STREAMLIT · GIT · TAILWIND · </text>
+    </g>
+  </g>
+</svg>
